@@ -236,7 +236,7 @@ plot_parameters(model.state_dict()['cnn2.weight'], number_rows=4, name='2nd laye
 """
 
 criterion = nn.CrossEntropyLoss()
-learning_rate = 0.1
+learning_rate = 4e-5
 optimizer = torch.optim.SGD(model.parameters(), lr = learning_rate)
 train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=100)
 validation_loader = torch.utils.data.DataLoader(dataset=validation_dataset, batch_size=5000)
@@ -247,7 +247,7 @@ validation_loader = torch.utils.data.DataLoader(dataset=validation_dataset, batc
 
 # Train the model
 
-n_epochs=20
+n_epochs=200
 cost_list=[]
 accuracy_list=[]
 N_test=len(validation_dataset)
