@@ -12,6 +12,9 @@ Original file is located at
 <h5> 1. Learn how to use a Convolutional Neural Network to classify handwritten digits from the MNIST database</h5>
 <h5> 2. Learn hot to reshape the images to make them faster to process </h5>
 
+
+
+
 <h2>Preparation</h2>
 """
 
@@ -174,6 +177,9 @@ show_data(train_dataset[3])
 <h2 id="CNN">Build a Convolutional Neural Network Class</h2>
 
 Build a Convolutional Network class with two Convolutional layers and one fully connected layer. Pre-determine the size of the final output matrix. The parameters in the constructor are the number of output channels for the first and second layer.
+
+
+
 """
 
 class CNN(nn.Module):
