@@ -253,7 +253,7 @@ validation_loader = torch.utils.data.DataLoader(dataset=validation_dataset, batc
 
 # Train the model
 
-n_epochs=200
+n_epochs=250
 cost_list=[]
 accuracy_list=[]
 N_test=len(validation_dataset)
